@@ -9,7 +9,16 @@ module.exports = {
     extend: {
       colors: {
         'mainBg': '#040506',
+        'searchBg': '#100f14',
+        'textColor': '#b1b1b1',
       },
+      screens: {
+        'sm': '320px',
+        'md': '768px',
+        'lg': '1024px',
+        'xl': '1280px',
+        '2xl': '1536px',
+      }
     },
   },
   plugins: [],
