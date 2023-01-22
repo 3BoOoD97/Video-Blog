@@ -31,7 +31,24 @@ const Home: NextPage = () => {
     </div>
     {/* ---------- */}
     {/* Main Container */}
-    <div className='md:w-[90%] h-full bg-red-700'></div>
+    <div className='sm:w-[calc(100%-60px)] md:w-[90%] h-full '>
+      {/* Top */}
+      <div className='w-full h-[70%] grid grid-cols-3 gap-2 p-2'>
+        {/*Video Container */}
+      <div className='sm:col-span-6 md:col-span-2 bg-blue-400 rounded-lg
+      overflow-hidden flex items-center justify-center'>2</div>
+      {/* Recomnded Videos */}
+      <div className='sm:col-span-6 md:col-span-1 bg-blue-400'>2</div>
+
+      </div>
+          {/* ---------- */}
+
+      {/* Bottom */}
+      <div className='w-full h-[30%] bg-white'></div>
+      {/* ---------- */}
+
+
+    </div>
     {/* ---------- */}
     </div>
     </div>
