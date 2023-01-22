@@ -15,7 +15,7 @@ function Header() {
     {/* Logo */}
     <img src="https://firebasestorage.googleapis.com/v0/b/videoblog-9a094.appspot.com/o/Images%2Fattachment_104755631.jfif?alt=media&token=3b8946b2-2808-4be7-99c6-76c911aa4bd5"
       alt="logo" 
-      className="md:w-[60px] md:h-[60px] sm:w-[30px] sm:h-[30px]" />
+      className="md:w-[60px] md:h-[60px] sm:w-[30px] sm:h-[30px] lg:ml-[22px]" />
 
     {/* Search Bar */}
     <div className='ml-20 bg-searchBg h-[40px] px-2 md:flex items-center rounded-md overflow-hidden
