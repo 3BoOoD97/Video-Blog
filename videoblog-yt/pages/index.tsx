@@ -2,7 +2,7 @@ import type { NextPage } from 'next'
 import Header from '../Components/Header'
 import MenuItem from '../Components/MenuItem'
 import {Chat, Dashboard, Favorite, LocalMovies, Logout, Stream, TrendingUp, TrendingUpRounded, VideogameAsset} from '@mui/icons-material'
-
+import VideoContainer from '../Components/VideoContainer'
 import Head from 'next/head'
 import Image from 'next/image'
 const Home: NextPage = () => {
@@ -32,13 +32,21 @@ const Home: NextPage = () => {
     {/* ---------- */}
     {/* Main Container */}
     <div className='sm:w-[calc(100%-60px)] md:w-[90%] h-full '>
+      
       {/* Top */}
-      <div className='w-full h-[70%] grid grid-cols-3 gap-2 p-2'>
+      <div className='w-full h-[70%] max-h-[480px] grid grid-cols-3 gap-2 p-2'>
+
         {/*Video Container */}
-      <div className='sm:col-span-6 md:col-span-2 bg-blue-400 rounded-lg
-      overflow-hidden flex items-center justify-center'>2</div>
+      <div className='sm:col-span-6 md:col-span-2  rounded-lg
+      overflow-hidden flex items-center justify-center'>
+        <VideoContainer/>
+      </div>
+
       {/* Recomnded Videos */}
-      <div className='sm:col-span-6 md:col-span-1 bg-blue-400'>2</div>
+      <div className='sm:col-span-6 md:col-span-1 bg-searchBg overflow-y-auto'>
+        
+
+      </div>
 
       </div>
           {/* ---------- */}
