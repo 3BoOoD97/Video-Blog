@@ -5,6 +5,7 @@ import {Chat, Dashboard, Favorite, LocalMovies, Logout, Stream, TrendingUp, Tren
 import VideoContainer from '../Components/VideoContainer'
 import Head from 'next/head'
 import Image from 'next/image'
+import RecommendedList from '../Components/RecommendedList'
 const Home: NextPage = () => {
   return (
 
@@ -43,8 +44,15 @@ const Home: NextPage = () => {
       </div>
 
       {/* Recomnded Videos */}
-      <div className='sm:col-span-6 md:col-span-1 bg-searchBg overflow-y-auto'>
-        
+      <div className='sm:col-span-6 md:col-span-1 bg-searchBg overflow-y-auto ease-in-out
+        scrollbar scrollbar-thin scrollbar-thumb-gray-800 
+      '>
+          <p className='text-textColor text-[18px] font-bold my-2 p-2'>Recommeded</p>
+
+      <div>
+        <RecommendedList />
+
+      </div>
 
       </div>
 
