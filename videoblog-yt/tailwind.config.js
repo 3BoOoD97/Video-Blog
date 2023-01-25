@@ -11,6 +11,7 @@ module.exports = {
         'mainBg': '#040506',
         'searchBg': '#100f14',
         'textColor': '#b1b1b1',
+        'collectionBg' : 'rgba(0, 0, 0, 0.6)',
       },
       screens: {
         'sm': '320px',

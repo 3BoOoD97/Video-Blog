@@ -6,7 +6,20 @@ import VideoContainer from '../Components/VideoContainer'
 import Head from 'next/head'
 import Image from 'next/image'
 import RecommendedList from '../Components/RecommendedList'
+import Collections from '../Components/Collections'
+import { useEffect } from 'react'
 const Home: NextPage = () => {
+  useEffect(()=>{
+    const scrollContainer = document.getElementById('scrollContainer');
+   scrollContainer?.addEventListener('wheel', (evt) => {
+    evt.preventDefault();
+      scrollContainer.scrollLeft += evt.deltaY;
+      
+    });
+    
+  },[]);
+
+
   return (
 
     <div className="bg-mainBg w-screen h-screen overflow-hidden flex flex-col">
@@ -60,7 +73,12 @@ const Home: NextPage = () => {
           {/* ---------- */}
 
       {/* Bottom */}
-      <div className='w-full h-[30%] bg-white'></div>
+      <div className='w-full h-[30%]'>
+        <div className=' flex overflow-x-auto items-center py-2 scrollbar-none' id='scrollContainer'>
+        <Collections />
+      
+        </div>
+      </div>
       {/* ---------- */}
 
 
