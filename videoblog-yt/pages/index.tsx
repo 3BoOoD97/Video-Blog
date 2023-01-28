@@ -15,9 +15,9 @@ import Header from "../Components/Header";
 import Menu from "../Components/Menu";
 import RecomendedList from "../Components/RecomendedList";
 import VideoContainer from "../Components/VideoContainer";
-import Data from "../Components/Data.tsx";
 import { TimelineLite, gsap } from "gsap";
-
+import Data from "../Components/Data";
+import Category from "../Components/CollectionData";
 const Home: NextPage = () => {
   gsap.registerPlugin();
   const [isvideo, setvideo] = useState({
@@ -112,9 +112,9 @@ const Home: NextPage = () => {
               className="flex overflow-x-scroll items-center scrollbar-none py-2"
               id="scrollContainer"
             >
-              {Data &&
-                Data.map((data) => (
-                  <Collection key={data.id} imgSrc={data.imgSrc} />
+              {Category &&
+                Category.map((Category) => (
+                  <Collection key={Category.id} imgSrc={Category.imgSrc} category={Category.category} />
                 ))}
             </div>
           </div>

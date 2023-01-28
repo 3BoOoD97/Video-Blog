@@ -1,4 +1,4 @@
-function Collection({ imgSrc }) {
+function Collection({ imgSrc, category }) {
   return (
     <div
       className="min-w-[250px] max-h-[140px] bg-primary 
@@ -6,7 +6,7 @@ function Collection({ imgSrc }) {
     >
       <img src={imgSrc} alt="" className="w-full h-full object-cover" />
       <div className="w-full h-[40px] bg-collectionBg absolute bottom-0 flex items-center">
-        <h2 className="px-2 text-white font-bold">shooting games</h2>
+        <h2 className="px-2 text-white font-bold">{category}</h2>
       </div>
     </div>
   );
